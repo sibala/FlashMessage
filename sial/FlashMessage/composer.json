@@ -1,0 +1,22 @@
+{
+    "name": "sial/FlashMessage",    
+    "type": "library",
+    "description": "PHP Class for handling flash messages",
+    "keywords": ["module", "flash", "message"],
+    "homepage": "",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sibar Al-ani",
+            "email": "jommajomma@hotmail.com",
+            "homepage": "",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4"
+    },
+    "autoload": {
+        "psr-4": { "Sial\\": "src/" }
+    }
+}
