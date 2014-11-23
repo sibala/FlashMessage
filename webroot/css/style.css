@@ -1,0 +1,29 @@
+
+#success {
+	width: 100%;
+	background-color: #D5F7A1;
+	border: 1px solid;
+	padding:10px;
+	margin-bottom: 2px;
+}
+#notice {
+	width: 100%;
+	background-color: #FFFDB0;
+	border: 1px solid;
+	padding:10px;
+	margin-bottom: 2px;
+}
+#warning {
+	width: 100%;
+	background-color: #F9BC89;
+	border: 1px solid;
+	padding:10px;
+	margin-bottom: 2px;
+}
+#error {
+	width: 100%;
+	background-color: #F24749;
+	border: 1px solid;
+	padding:10px;
+	margin-bottom: 2px;
+}
