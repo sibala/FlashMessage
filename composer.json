@@ -1,5 +1,5 @@
 {
-    "name": "sial/FlashMessage",    
+    "name": "sial/flashmessage",    
     "type": "library",
     "description": "PHP Class for handling flash messages",
     "keywords": ["module", "flash", "message"],
