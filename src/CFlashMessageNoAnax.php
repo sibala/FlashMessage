@@ -8,16 +8,18 @@ namespace Sial;
  * @package CFlashMessage
  */
 
-class CFlashMessage implements \Anax\DI\IInjectionAware
+class CFlashMessageNoAnax
 {
-    use \Anax\DI\TInjectable;
-	
-	
+
 	/**
      * Properties
      */
 	private $msgType = ['success', 'notice', 'warning', 'error']; // array that contains the 4 message alternatives
 	
+	public function initialize()
+	{
+		session_start();
+	}
 	/**
      * Gets all messages in html format
      *
@@ -75,7 +77,7 @@ class CFlashMessage implements \Anax\DI\IInjectionAware
 				'msgType' => $msgType,
 				'msg' => $msg
 				];
-        $this->session->set('FlashMsg', $messages);
+        $_SESSION["FlashMsg"] = $messages;
     }
 	
 	/**
@@ -85,19 +87,18 @@ class CFlashMessage implements \Anax\DI\IInjectionAware
      */
 	private function findMessages()
     {
-        $messages = $this->session->get("FlashMsg", []);
-		 if(!isset($messages))	
+		 if(!isset($_SESSION["FlashMsg"]))	
         {
             return null;
         } 
-		return $messages;
+		return $_SESSION["FlashMsg"];;
     }
 	
 	/**
      * Clears session from all flash messages
      */
 	private function clearMessages(){
-		$this->session->set("FlashMsg", null);
+		$_SESSION["FlashMsg"] = null;
 	}
 	
 }
