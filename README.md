@@ -1,6 +1,9 @@
 FlashMessage
 =============
 Php class for flash messsages.
+[![Build Status](https://travis-ci.org/sibala/FlashMessage.svg?branch=master)](https://travis-ci.org/sibala/FlashMessage)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/sibala/FlashMessage/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/sibala/FlashMessage/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/sibala/FlashMessage/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/sibala/FlashMessage/?branch=master)
 
 
 ###License
